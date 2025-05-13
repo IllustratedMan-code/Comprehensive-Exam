@@ -25,15 +25,18 @@ jobs:
         with:
           node-version: 'lts/*'
 
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
       - name: Install dependencies
-        run: nci
+        working-directory: slides
+        run: bun install
 
       - name: Build
-        working-directory: ./slides
-        run: nr build --base /${{github.event.repository.name}}/
+        working-directory: slides
+        run: bun run build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
