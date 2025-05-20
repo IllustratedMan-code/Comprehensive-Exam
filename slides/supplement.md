@@ -6,8 +6,6 @@ hideInToc: true
 
 # Supplement
 
-stuff
-
 ---
 
 ```yaml
@@ -50,3 +48,15 @@ routeAlias: TF
 ## Transcription Factor
 
 <goBack />
+
+---
+
+```yaml
+routeAlias: IMR90
+```
+
+## IMR-90 cells
+
+A cell line derived from 16-week old human female fibroblasts in the lung.
+
+<goBack from=data-formats />

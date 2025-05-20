@@ -1,0 +1,249 @@
+---
+transition: slide-up
+layout: section
+hideInToc: true
+---
+
+# Figure 1
+
+---
+
+```yaml
+transition: slide-up
+layout: image
+image: /pages/figures/figure1.webp
+backgroundSize: 80% 90%
+```
+
+---
+
+```yaml
+transition: slide-up
+layout: image-left
+image: /pages/figures/figure1-a.webp
+backgroundSize: auto 90%
+```
+
+## Model Architecture
+
+- 2Mb DNA sequence is one-hot encoded
+- DNA and feature signals (ATAC, CTCF ChIP) are preprocessed separately then combined
+- Transformer encoder processes combined signal into latent representation of 3D chromatin relationships
+- Conv2D/Decoder transforms latent representation into recognizable Hi-C-like representation
+
+---
+
+```yaml
+routeAlias: data-formats
+transition: slide-left
+layout: image-right
+image: /pages/figures/figure1-b.webp
+backgroundSize: auto 90%
+```
+
+## Data Formats and Selection
+
+- **Inputs:** <span v-mark.orange.box> 2Mb </span> regions of DNA, CTCF ChIP-seq, and ATAC-seq
+- **Outputs:** matrix of interactions between <span v-mark.green.box> 8Kb </span> regions within the input (equivalent to HI-C)
+- A validation chromosome and
+  a test chromosome are randomly selected from the rest of the chromosomes
+- <span v-mark.blue.box> HI-C </span> data is used for validation/testing
+- Training is done with the <span v-mark.red.box> <Link to=IMR90 title="IMR-90" /> </span> cell line
+
+---
+
+```yaml
+transition: slide-up
+layout: section
+hideInToc: true
+```
+
+# Figure 2
+
+---
+
+```yaml
+layout: image
+transition: slide-up
+image: /pages/figures/figure2.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
+layout: image-right
+transition: slide-up
+image: /pages/figures/figure2-a.webp
+backgroundSize: 100% auto
+```
+
+## Input Data Types Matter
+
+- C. Origami (DNA + CTCF + ATAC) performs the best
+- Lower validation loss = better performance on the validation chromosome
+
+---
+
+```yaml
+layout: default
+transition: slide-up
+image: /pages/figures/insulation.png
+backgroundSize: 80% auto
+```
+
+## Insulation Score
+
+<div v-click="['+1', '+1']"  v-motion :initial="{ y: 100 }"  :enter="{ y: 0 }" :leave="{y: 100}" >
+
+$$
+\text{Insulation} = \frac{
+	\text{max} \left ( \frac{1}{n} \sum_n \text{Left Intensity}, \frac{1}{n} \sum_n \text{right Intensity}  \right ) + \text{psuedocount}}{
+	\frac{1}{n} \sum_n (\text{ Center Intensity}) + \text{pseudocount}
+	}
+$$
+
+</div>
+
+<div v-after v-motion :initial="{ y: -50 }"  :enter="{ y: -70 }" class="relative" >
+$$
+\text{Insulation} = \frac{
+\text{max} \left ( \text{ Average Left Intensity}, \: \text{Average Right Intensity} \right ) + \text{pseudocount}}{
+\text{ Average Center Intensity} + \text{pseudocount}
+}
+$$
+
+</div>
+
+<div v-click v-motion :initial="{x: 0, y: 0}" :enter="{x: 0, y: -50}" :click-4="{x: -300, y: -50}" >
+
+<img src=/pages/figures/insulation.png width=30% class="absolute left-50% -translate-x-1/2" />
+
+</div>
+
+<div v-click v-motion :initial="{x: 300, y:0}" :enter="{x: 300, y: -50}">
+
+$
+\text{Bin Radius} = 50 = 8kb \cdot 50 = 400kb = \frac{1}{5} \text{ of contact matrix}
+$
+
+```python
+def chr_score(matrix, res = 10000, radius = 500000, pseudocount_coeff = 30):
+	pseudocount = matrix.mean() * pseudocount_coeff
+	pixel_radius = int(radius / res)
+	scores = []
+	for loc_i, loc in enumerate(range(len(matrix))):
+		scores.append(
+			point_score(loc, pixel_radius, matrix, pseudocount))
+    return scores
+```
+
+</div>
+
+<!--
+A quick aside about insulation scores. They are calculated by sliding three "boxes" along the diagonal. Each point (represented by the red dot) is calculated by dividing the left or right box with the largest intensity (red) divided by the center box. Low values represent a lack of difference between left or right and center boxes.
+-->
+
+---
+
+```yaml
+layout: image-right
+image: /pages/figures/figure2-b-e.webp
+transition: slide-up
+backgroundSize: auto 95%
+```
+
+## It Works!
+
+- Less <span v-mark.box.orange> "noisy" </span> than experimental
+- Insulation scores are highly similar
+- Insulation is inversly correlated with CTCF and ATAC-seq signal (mostly)
+
+---
+
+```yaml
+layout: image-left
+transition: slide-up
+image: /pages/figures/figure2-f-h.webp
+backgroundSize: auto 95%
+```
+
+## Insulation is highly correlated
+
+- Chromosome 10 is Validation
+- Chromosome 15 is Test
+- $\rho$ is Spearman, r is Pearson (all other correlations are pearson)
+- C. Origami has higher correlation than competing (sequence only) models
+- Direct (non-insulation) correlation decreases as distance increases
+
+---
+
+```yaml
+layout: section
+hideInToc: true
+```
+
+# Figure 3
+
+---
+
+```yaml
+layout: image
+transition: slide-up
+image: /pages/figures/figure3.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
+layout: section
+hideInToc: true
+```
+
+# Figure 4
+
+---
+
+```yaml
+layout: image
+image: /pages/figures/figure4.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
+layout: section
+hideInToc: true
+```
+
+# Figure 5
+
+---
+
+```yaml
+layout: image
+image: /pages/figures/figure5.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
+layout: section
+hideInToc: true
+```
+
+# Figure 6
+
+---
+
+```yaml
+layout: image
+image: /pages/figures/figure6.webp
+backgroundSize: auto 95%
+```
+
+---
+
