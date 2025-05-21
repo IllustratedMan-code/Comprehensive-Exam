@@ -11,7 +11,7 @@ hideInToc: true
 ```yaml
 transition: slide-up
 layout: image
-image: pages/figures/figure1.webp
+image: /figures/figure1.webp
 backgroundSize: 80% 90%
 ```
 
@@ -20,7 +20,7 @@ backgroundSize: 80% 90%
 ```yaml
 transition: slide-up
 layout: image-left
-image: /pages/figures/figure1-a.webp
+image: /figures/figure1-a.webp
 backgroundSize: auto 90%
 ```
 
@@ -37,7 +37,7 @@ backgroundSize: auto 90%
 routeAlias: data-formats
 transition: slide-left
 layout: image-right
-image: /pages/figures/figure1-b.webp
+image: /figures/figure1-b.webp
 backgroundSize: auto 90%
 ```
 
@@ -65,7 +65,7 @@ hideInToc: true
 ```yaml
 layout: image
 transition: slide-up
-image: /pages/figures/figure2.webp
+image: /figures/figure2.webp
 backgroundSize: auto 95%
 ```
 
@@ -74,7 +74,7 @@ backgroundSize: auto 95%
 ```yaml
 layout: image-right
 transition: slide-up
-image: /pages/figures/figure2-a.webp
+image: /figures/figure2-a.webp
 backgroundSize: 100% auto
 ```
 
@@ -88,7 +88,7 @@ backgroundSize: 100% auto
 ```yaml
 layout: default
 transition: slide-up
-image: /pages/figures/insulation.png
+image: /figures/insulation.png
 backgroundSize: 80% auto
 ```
 
@@ -117,7 +117,7 @@ $$
 
 <div v-click v-motion :initial="{x: 0, y: 0}" :enter="{x: 0, y: -50}" :click-4="{x: -300, y: -50}" >
 
-<img src=/pages/figures/insulation.png width=30% class="absolute left-50% -translate-x-1/2" />
+<img src=/figures/insulation.png width=30% class="absolute left-50% -translate-x-1/2" />
 
 </div>
 
@@ -148,7 +148,7 @@ A quick aside about insulation scores. They are calculated by sliding three "box
 
 ```yaml
 layout: image-right
-image: /pages/figures/figure2-b-e.webp
+image: /figures/figure2-b-e.webp
 transition: slide-up
 backgroundSize: auto 95%
 ```
@@ -164,7 +164,7 @@ backgroundSize: auto 95%
 ```yaml
 layout: image-left
 transition: slide-up
-image: /pages/figures/figure2-f-h.webp
+image: /figures/figure2-f-h.webp
 backgroundSize: auto 95%
 ```
 
@@ -190,7 +190,7 @@ hideInToc: true
 ```yaml
 layout: image
 transition: slide-up
-image: /pages/figures/figure3.webp
+image: /figures/figure3.webp
 backgroundSize: auto 95%
 ```
 
@@ -199,7 +199,7 @@ backgroundSize: auto 95%
 ```yaml
 layout: image-left
 transition: slide-up
-image: /pages/figures/figure3-a-d.webp
+image: /figures/figure3-a-d.webp
 backgroundSize: auto 95%
 ```
 
@@ -208,7 +208,7 @@ backgroundSize: auto 95%
 ```yaml
 layout: image-right
 transition: slide-up
-image: /pages/figures/figure3-e-h.webp
+image: /figures/figure3-e-h.webp
 backgroundSize: auto 95%
 ```
 
@@ -225,7 +225,7 @@ hideInToc: true
 
 ```yaml
 layout: image
-image: /pages/figures/figure4.webp
+image: /figures/figure4.webp
 backgroundSize: auto 95%
 ```
 
@@ -233,11 +233,11 @@ backgroundSize: auto 95%
 
 ```yaml
 layout: image-left
-image: /pages/figures/figure4-a-b.webp
+image: /figures/figure4-a-b.webp
 backgroundSize: 95% auto
 ```
 
-# Translocation in <Link to=CUTLL1 title="CUTLL1" /> cells
+## Translocation in <Link to=CUTLL1 title="CUTLL1" /> cells
 
 ---
 
@@ -252,7 +252,7 @@ hideInToc: true
 
 ```yaml
 layout: image
-image: /pages/figures/figure5.webp
+image: /figures/figure5.webp
 backgroundSize: auto 95%
 ```
 
@@ -269,7 +269,7 @@ hideInToc: true
 
 ```yaml
 layout: image
-image: /pages/figures/figure6.webp
+image: /figures/figure6.webp
 backgroundSize: auto 95%
 ```
 
