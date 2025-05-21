@@ -11,7 +11,7 @@ hideInToc: true
 ```yaml
 transition: slide-up
 layout: image
-image: /pages/figures/figure1.webp
+image: pages/figures/figure1.webp
 backgroundSize: 80% 90%
 ```
 
@@ -197,6 +197,24 @@ backgroundSize: auto 95%
 ---
 
 ```yaml
+layout: image-left
+transition: slide-up
+image: /pages/figures/figure3-a-d.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
+layout: image-right
+transition: slide-up
+image: /pages/figures/figure3-e-h.webp
+backgroundSize: auto 95%
+```
+
+---
+
+```yaml
 layout: section
 hideInToc: true
 ```
@@ -210,6 +228,16 @@ layout: image
 image: /pages/figures/figure4.webp
 backgroundSize: auto 95%
 ```
+
+---
+
+```yaml
+layout: image-left
+image: /pages/figures/figure4-a-b.webp
+backgroundSize: 95% auto
+```
+
+# Translocation in <Link to=CUTLL1 title="CUTLL1" /> cells
 
 ---
 

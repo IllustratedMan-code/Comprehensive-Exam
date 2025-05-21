@@ -115,7 +115,26 @@ src: pages/figures.md
 
 ---
 
-# Caveats
+```yaml
+layout: cover
+```
+
+# Discussion
+
+---
+
+## Critiques
+
+- CTCF only performs this function in mammals
+- Insulation is not a perfect metric
+
+---
+
+## Potential Future Work
+
+- CTCF ChIP-seq model from sequence data
+- ATAC model from sequence data
+- A "sequence-only" model provides more oppourtunity for insilico modification.
 
 ---
 
