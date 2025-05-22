@@ -336,8 +336,15 @@ backgroundSize: auto 95%
 ```yaml
 layout: image-left
 image: /figures/figure5-e-g.webp
-backgroundSize: auto 95%
+backgroundSize: 95% auto
 ```
+
+## Characterization of Identified Cis-Regulatory Elements
+
+- Groups are clustered by presence and absence of ATAC and CTCF signal
+- Each row of **e** represents a 5Kb region centered by an "important" 1Kb region
+
+---
 
 ```yaml
 layout: section

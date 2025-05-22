@@ -1,6 +1,6 @@
 ---
-theme: default
-layout: cover
+theme: apple-basic
+layout: intro
 hideInToc: true
 drawings:
   persist: false
@@ -103,7 +103,7 @@ In silico experiments manipulate the presence of cis-regulatory elements (DNA)
 ---
 
 ```yaml
-layout: cover
+layout: intro
 ```
 
 # Results
