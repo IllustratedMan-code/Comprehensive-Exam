@@ -10,6 +10,8 @@ hideInToc: true
 
 ```yaml
 routeAlias: ChIP-seq
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chromatin_immunoprecipitation_sequencing.svg/800px-Chromatin_immunoprecipitation_sequencing.svg.png
+layout: image-right
 ```
 
 ## ChIP-seq
@@ -22,10 +24,15 @@ routeAlias: ChIP-seq
 ---
 
 ```yaml
-routeAlias: HI-C
+routeAlias: Hi-C
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/HiCschematic.png/1024px-HiCschematic.png
+layout: image-left
 ```
 
-## HI-C
+## Hi-C
+
+- Used to determine 3D chromatin relationships
+- Can identify <Link title="TADs" to=TAD />
 
 <goBack />
 
@@ -79,6 +86,7 @@ layout: image-right
 routeAlias: transformer-encoder
 image: transformer.webp
 layout: image-left
+backgroundSize: 95% auto
 ```
 
 ## Transformer Encoder
@@ -86,3 +94,12 @@ layout: image-left
 <goBack />
 
 ---
+
+```yaml
+routeAlias: TAD
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Structural_organization_of_chromatin.png/1024px-Structural_organization_of_chromatin.png
+layout: image-right
+backgroundSize: 95% auto
+```
+
+## Topologically Associated Domains
