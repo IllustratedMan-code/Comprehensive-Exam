@@ -60,3 +60,29 @@ routeAlias: IMR90
 A cell line derived from 16-week old human female fibroblasts in the lung.
 
 <goBack from=data-formats />
+
+---
+
+```yaml
+routeAlias: convolutional-layer
+image: https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif
+layout: image-right
+```
+
+## Convolutional Layer
+
+<goBack />
+
+---
+
+```yaml
+routeAlias: transformer-encoder
+image: transformer.webp
+layout: image-left
+```
+
+## Transformer Encoder
+
+<goBack />
+
+---

@@ -44,10 +44,10 @@ backgroundSize: auto 90%
 ## Data Formats and Selection
 
 - **Inputs:** <span v-mark.orange.box> 2Mb </span> regions of DNA, CTCF ChIP-seq, and ATAC-seq
-- **Outputs:** matrix of interactions between <span v-mark.green.box> 8Kb </span> regions within the input (equivalent to HI-C)
+- **Outputs:** matrix of interactions between <span v-mark.green.box> 8Kb </span> regions within the input (equivalent to Hi-C)
 - A validation chromosome and
   a test chromosome are randomly selected from the rest of the chromosomes
-- <span v-mark.blue.box> HI-C </span> data is used for validation/testing
+- <span v-mark.blue.box> Hi-C </span> data is used for validation/testing
 - Training is done with the <span v-mark.red.box> <Link to=IMR90 title="IMR-90" /> </span> cell line
 
 ---
@@ -224,6 +224,7 @@ hideInToc: true
 ---
 
 ```yaml
+transition: slide-up
 layout: image
 image: /figures/figure4.webp
 backgroundSize: auto 95%
@@ -232,16 +233,52 @@ backgroundSize: auto 95%
 ---
 
 ```yaml
+transition: slide-up
 layout: image-left
 image: /figures/figure4-a-b.webp
 backgroundSize: 95% auto
 ```
 
-## Translocation in <Link to=CUTLL1 title="CUTLL1" /> cells
+## Translocation in <Link to=CUTLL1 title="CUTLL1" /> Cells
+
+- Oppourtunity to test in silico modifications
+- Hi-C is performed on the CUTLL1 Cells (which have a real translocation)
+
+<!--
+Note the TAD
+-->
 
 ---
 
 ```yaml
+transition: slide-up
+layout: image-right
+image: /figures/figure4-c-f.webp
+backgroundSize: 95% auto
+```
+
+## Synthetic Genome With Identical Translocation
+
+- ATAC, CTCF ChIP and DNA are cut and "glued" back together to simulate translocation
+- Same "Stripe" or "neo TAD" identified in in silico
+
+---
+
+```yaml
+layout: image-left
+image: /figures/figure4-g-i.webp
+backgroundSize: 95% auto
+```
+
+## In Silico Deletion
+
+- Deletion of 500-bp region alters chromatin looping
+- Change is most visible in the virtual 4C signal
+
+---
+
+```yaml
+transition: slide-up
 layout: section
 hideInToc: true
 ```

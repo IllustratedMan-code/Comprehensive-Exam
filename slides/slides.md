@@ -36,7 +36,8 @@ layout: two-cols
 - <Link title="Transcription Factor" to=TF />
 - <Link title="ChIP-seq (TF Binding)" to=ChIP-seq />
 - <Link title="ATAC-seq (Chromatin Accessibility)" to=ATAC-seq />
-- <Link title="HI-C (3D Chromatin Conformation)" to=HI-C />
+- <Link title="Hi-C (3D Chromatin Conformation)" to=Hi-C />
+- <Link title="Topologically Associated Domains (TADs)" to=TAD />
 
 ::right::
 
@@ -60,7 +61,7 @@ layout: center
 <div v-click v-motion :initial="{ y: -50 }" :enter="{ y: 0 }">
 
 $$
-\text{HI-C} \approx model(\text{DNA, CTCF ChIP-seq, ATAC-seq})
+\text{Hi-C} \approx model(\text{DNA, CTCF ChIP-seq, ATAC-seq})
 $$
 
 </div>
@@ -75,7 +76,7 @@ Everything in the paper boils down to predicting 3D chromatin conformation from 
 
 <v-clicks>
 
-- HI-C is expensive when compared to CTCF ChIP + ATAC-seq
+- Hi-C is expensive when compared to CTCF ChIP + ATAC-seq
 - In silico experiments
 
 </v-clicks>
@@ -127,10 +128,12 @@ layout: cover
 
 - CTCF only performs this function in mammals
 - Insulation is not a perfect metric
+- Does not capture distant interactions well
+- No "meta methods" about ML model architecture
 
 ---
 
-## Potential Future Work
+## Future Work?
 
 - CTCF ChIP-seq model from sequence data
 - ATAC model from sequence data
