@@ -12,6 +12,7 @@ hideInToc: true
 routeAlias: ChIP-seq
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chromatin_immunoprecipitation_sequencing.svg/800px-Chromatin_immunoprecipitation_sequencing.svg.png
 layout: image-right
+backgroundSize: auto 100%
 ```
 
 ## ChIP-seq

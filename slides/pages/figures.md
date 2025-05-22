@@ -207,6 +207,7 @@ routeAlias: figure3-a-d
 ## Works On Other Cell Types
 
 - Correctly identifies looping differences in the GM12878 cell line
+- Insulation scores are highly correlated
 
 ---
 
@@ -216,6 +217,13 @@ transition: slide-up
 image: /figures/figure3-e-h.webp
 backgroundSize: auto 95%
 ```
+
+## Correlation to Experimental Data
+
+- Insulation scores are highly correlated
+- Matrix correlation is considerably lower
+- Matrix correlation falls as distance increases
+- Performs better than sequence-only models in all cases
 
 ---
 
@@ -251,7 +259,7 @@ routeAlias: figure4-a-b
 - Hi-C is performed on the CUTLL1 Cells (which have a real translocation)
 
 <!--
-Note the TAD
+Note the TAD difference from non-translocated cells indicated by the arrows
 -->
 
 ---
@@ -300,6 +308,36 @@ backgroundSize: auto 95%
 ```
 
 ---
+
+```yaml
+layout: image-left
+image: /figures/figure5-abd.webp
+backgroundSize: 95% auto
+```
+
+## Impact Score
+
+- Metric calculated by in silico deletion of 1Kb regions across a 2Mb window
+- Resulting model prediction is compared to non-deleted 2Mb window
+- Difference maps are aggregated via mean absolute difference
+
+---
+
+```yaml
+layout: image-right
+image: /figures/figure5-c.webp
+backgroundSize: auto 95%
+```
+
+## All Scores are Correlated with ATAC and CTCF signal
+
+---
+
+```yaml
+layout: image-left
+image: /figures/figure5-e-g.webp
+backgroundSize: auto 95%
+```
 
 ```yaml
 layout: section
