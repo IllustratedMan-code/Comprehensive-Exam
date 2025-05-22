@@ -27,6 +27,7 @@ layout: image-right
 routeAlias: Hi-C
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/HiCschematic.png/1024px-HiCschematic.png
 layout: image-left
+backgroundSize: 95% auto
 ```
 
 ## Hi-C
@@ -54,6 +55,8 @@ routeAlias: TF
 
 ## Transcription Factor
 
+Any protein that binds to DNA and alters transcriptional activity.
+
 <goBack />
 
 ---
@@ -74,9 +77,12 @@ A cell line derived from 16-week old human female fibroblasts in the lung.
 routeAlias: convolutional-layer
 image: https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif
 layout: image-right
+backgroundSize: 95% auto
 ```
 
 ## Convolutional Layer
+
+For each input value, a convolutional layer will apply a kernel matrix to the value and it's "surroundings", resulting in a single output value. Multiple kernel matrices can be learned by the layer, each attempting to identify a feature relationship. The area of a kernel matrix is known as a "receptive field".
 
 <goBack />
 
@@ -103,3 +109,31 @@ backgroundSize: 95% auto
 ```
 
 ## Topologically Associated Domains
+
+Regions of chromatin that are isulated from each other. In other words,
+chromatin within a TAD may interact with itself, but not with chromatin in other TADs.
+<goBack />
+
+---
+
+```yaml
+routeAlias: CUTLL1
+```
+
+# CUTLL1 Cells
+
+CUTLL1 is human T-cell lymphoma cell line with a t(7;9) rearrangement, aberrant NOTCH1 activation and high sensitivity to gamma-secretase inhibitors.
+
+<goBack from=figure4-a-b />
+
+---
+
+```yaml
+routeAlias: GM12878
+```
+
+## GM12878 Cells
+
+Epstein-Barr transfected lymphoblastoid human cell line.
+
+<goBack from=figure3-a-d />

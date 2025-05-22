@@ -201,7 +201,12 @@ layout: image-left
 transition: slide-up
 image: /figures/figure3-a-d.webp
 backgroundSize: auto 95%
+routeAlias: figure3-a-d
 ```
+
+## Works On Other Cell Types
+
+- Correctly identifies looping differences in the GM12878 cell line
 
 ---
 
@@ -237,11 +242,12 @@ transition: slide-up
 layout: image-left
 image: /figures/figure4-a-b.webp
 backgroundSize: 95% auto
+routeAlias: figure4-a-b
 ```
 
 ## Translocation in <Link to=CUTLL1 title="CUTLL1" /> Cells
 
-- Oppourtunity to test in silico modifications
+- Opportunity to test in silico modifications
 - Hi-C is performed on the CUTLL1 Cells (which have a real translocation)
 
 <!--
