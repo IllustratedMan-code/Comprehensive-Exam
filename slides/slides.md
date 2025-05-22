@@ -8,9 +8,15 @@ transition: slide-left
 mdc: true
 ---
 
-# Qualifying Exam
+<div class="absolute top-30">
+
+<h1> Qualifying Exam </h1>
 
 David Lewis
+
+</div>
+
+<img class="absolute right-10 bottom-30" src=/paper-title.png  width=60% />
 
 ---
 
@@ -87,7 +93,7 @@ In silico experiments manipulate the presence of cis-regulatory elements (DNA)
 
 ---
 
-## Why CTCF?
+# Why CTCF?
 
 <v-clicks>
 
@@ -117,7 +123,7 @@ src: pages/figures.md
 ---
 
 ```yaml
-layout: cover
+layout: intro
 ```
 
 # Discussion
