@@ -75,8 +75,10 @@ backgroundSize: auto 95%
 layout: image-right
 transition: slide-up
 image: /figures/figure2-a.webp
-backgroundSize: 100% auto
+backgroundSize: 90% 90%
 ```
+
+## Cropped Image Wrong
 
 ## Input Data Types Matter
 
@@ -98,7 +100,7 @@ backgroundSize: 80% auto
 
 $$
 \text{Insulation} = \frac{
-	\text{max} \left ( \frac{1}{n} \sum_n \text{Left Intensity}, \frac{1}{n} \sum_n \text{right Intensity}  \right ) + \text{psuedocount}}{
+	\text{max} \left ( \frac{1}{n} \sum_n \text{Left Intensity}, \frac{1}{n} \sum_n \text{right Intensity}  \right ) + \text{pseudocount}}{
 	\frac{1}{n} \sum_n (\text{ Center Intensity}) + \text{pseudocount}
 	}
 $$

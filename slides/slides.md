@@ -1,5 +1,5 @@
 ---
-theme: apple-basic
+theme: default
 layout: intro
 hideInToc: true
 drawings:
@@ -81,9 +81,9 @@ Everything in the paper boils down to predicting 3D chromatin conformation from 
 # Rationale
 
 <v-clicks>
-
 - Hi-C is expensive when compared to CTCF ChIP + ATAC-seq
 - In silico experiments
+- No other multi-modal models
 
 </v-clicks>
 
@@ -144,6 +144,16 @@ layout: intro
 - CTCF ChIP-seq model from sequence data
 - ATAC model from sequence data
 - A "sequence-only" model provides more oppourtunity for insilico modification.
+
+---
+
+## Agree or Disagree?
+
+<v-clicks>
+
+Agree!
+
+</v-clicks>
 
 ---
 
