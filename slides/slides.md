@@ -80,8 +80,6 @@ $$
 \text{Hi-C} \approx model(\text{DNA, CTCF ChIP-seq, ATAC-seq})
 $$
 
-Add Statement about it
-
 </div>
 
 <!--

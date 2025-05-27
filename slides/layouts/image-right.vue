@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { handleBackground } from '../layoutHelper.ts'
+import { resolveAssetUrl } from '../layoutHelper.ts'
 
 const props = defineProps({
   image: {
@@ -15,7 +15,7 @@ const props = defineProps({
   },
 })
 
-const style = computed(() => handleBackground(props.image, false, props.backgroundSize))
+const i = computed(() => resolveAssetUrl(props.image)) 
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const style = computed(() => handleBackground(props.image, false, props.backgrou
       <slot />
     </div>
     <div class="p-3 w-full h-full flex flex-col items-center justify-center">
-	 <img :src="props.image" class=" min-h-0 max-w-full max-h-full  -z-10" />
+	 <img :src="i" class="max-w-full max-h-full min-h-0  -z-10" />
  	 <div class=" text-sm text-left opacity-70">
               <slot name="caption" />
       	 </div>
