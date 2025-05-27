@@ -10,7 +10,7 @@ mdc: true
 
 <div class="absolute top-30">
 
-<h1 style="font-size: 3rem;"> Qualifying Exam </h1>
+<h1 style="font-size: 3rem;"> Comprehensive Exam </h1>
 
 David Lewis
 
@@ -79,6 +79,8 @@ layout: center
 $$
 \text{Hi-C} \approx model(\text{DNA, CTCF ChIP-seq, ATAC-seq})
 $$
+
+Add Statement about it
 
 </div>
 

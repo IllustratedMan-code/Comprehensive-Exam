@@ -273,6 +273,7 @@ hideInToc: true
 transition: slide-up
 layout: image
 image: /figures/figure4.webp
+backgroundSize: auto 95%
 ```
 
 ---
