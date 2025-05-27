@@ -8,6 +8,7 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@fireworks-js/vue": "^2.10.8",
     "@slidev/cli": "^51.6.0",
     "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "latest",

@@ -147,10 +147,15 @@ layout: intro
 
 ## Critiques
 
+<v-clicks>
+
 - CTCF only performs this function in mammals
 - Insulation is not a perfect metric
 - Does not capture distant interactions well
 - No "meta methods" about ML model architecture
+- No experimental validation for in silico deletions
+
+</v-clicks>
 
 ---
 
@@ -158,17 +163,14 @@ layout: intro
 
 - CTCF ChIP-seq model from sequence data
 - ATAC model from sequence data
-- A "sequence-only" model provides more oppourtunity for insilico modification.
+- A "sequence-only" model provides more opportunity for in silico modification.
 
 ---
 
 ## Overall Consensus
 
-<v-clicks>
-
-Agree!
-
-</v-clicks>
+<h1 v-click=1 class="absolute bottom-60 left-100"> Approved! </h1>
+<Fireworks v-click=1 />
 
 ---
 

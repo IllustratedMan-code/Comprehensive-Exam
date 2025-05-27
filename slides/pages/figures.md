@@ -21,7 +21,6 @@ backgroundSize: 80% 90%
 transition: slide-up
 layout: image-left
 image: /figures/figure1-a.webp
-backgroundSize: auto 90%
 ```
 
 ## Model Architecture
@@ -31,6 +30,10 @@ backgroundSize: auto 90%
 - Transformer encoder processes combined signal into latent representation of 3D chromatin relationships
 - Conv2D/Decoder transforms latent representation into recognizable Hi-C-like representation
 
+::caption::
+
+A schematic of C. Origami Architecture
+
 ---
 
 ```yaml
@@ -38,7 +41,6 @@ routeAlias: data-formats
 transition: slide-left
 layout: image-right
 image: /figures/figure1-b.webp
-backgroundSize: auto 90%
 ```
 
 ## Data Formats and Selection
@@ -165,7 +167,6 @@ backgroundSize: auto 95%
 layout: image-left
 transition: slide-up
 image: /figures/figure2-f-h.webp
-backgroundSize: auto 95%
 ```
 
 ## Insulation is highly correlated
@@ -344,8 +345,5 @@ backgroundSize: 95% auto
 - Groups are clustered by presence and absence of ATAC and CTCF signal
 - Each row of **e** represents a 5Kb region centered by an "important" 1Kb region
 
----
-
-```yaml
-src: /pages/supplemental-figures.md
-```
+::caption::
+Legend goes here
