@@ -52,6 +52,10 @@ image: /figures/figure1-b.webp
 - <span v-mark.blue.box> Hi-C </span> data is used for validation/testing
 - Training is done with the <span v-mark.red.box> <Link to=IMR90 title="IMR-90" /> </span> cell line
 
+::caption::
+C. Origami integrates DNA sequence, CTCF ChIP-sea and ATAC-seq signals as input features
+to predict Hi-C interaction matrix in 2-Mb windows.
+
 ---
 
 ```yaml
@@ -77,13 +81,16 @@ backgroundSize: auto 95%
 layout: image-right
 transition: slide-up
 image: /figures/figure2-a.webp
-backgroundSize: 90% 90%
 ```
 
 ## Input Data Types Matter
 
 - C. Origami (DNA + CTCF + ATAC) performs the best
 - Lower validation loss = better performance on the validation chromosome
+
+::caption::
+
+Validation loss of models trained from different combinations of input features. Lower validation loss indicates better model performance.
 
 ---
 
@@ -152,7 +159,6 @@ A quick aside about insulation scores. They are calculated by sliding three "box
 layout: image-right
 image: /figures/figure2-b-e.webp
 transition: slide-up
-backgroundSize: auto 95%
 ```
 
 ## It Works!
@@ -160,6 +166,18 @@ backgroundSize: auto 95%
 - Less <span v-mark.box.orange> "noisy" </span> than experimental
 - Insulation scores are highly similar
 - Insulation is inversly correlated with CTCF and ATAC-seq signal (mostly)
+
+<div class="absolute left-10% max-w-40% text-sm bottom-10% opacity-70%">
+
+**b**,**c**, Experimental (**b**) and C.Origami-predicted (**c**) Hi-C
+matrices of IMR-90 on training (chr2), validation (chr10) and test
+(chr15) chromosomes. **d**, Input CTCF-binding and chromatin
+accessibility profiles. **e**, Insulation scores calculated from
+experimental (solid line) and C.Origami-predicted (dotted line) Hi-C
+matrices. Pearson correlation coefficients between prediction and
+target insulation scores are presented.
+
+</div>
 
 ---
 
@@ -176,6 +194,9 @@ image: /figures/figure2-f-h.webp
 - $\rho$ is Spearman, r is Pearson (all other correlations are pearson)
 - C. Origami has higher correlation than competing (sequence only) models
 - Direct (non-insulation) correlation decreases as distance increases
+
+::caption::
+f, Insulation score correlation between predicted and experimental Hi-C matrices across all windows in both validation and test chromosomes with Pearson ($r$) and Spearman ($\rho$) correlation coefficients. g, Chromosome-wide distance-stratified interaction correlation (Pearson) between prediction and experimental data. h, Comparison of model performance across Akita, DeepC, Orca and C.Origami using genome-wide insulation score correlation between prediction and experimental data from IMR-90 cells. Error bars in the violin plots indicate minimum, mean and maximum values. μ, average insulation correlation.
 
 ---
 
@@ -210,13 +231,18 @@ routeAlias: figure3-a-d
 - Correctly identifies looping differences in the GM12878 cell line
 - Insulation scores are highly correlated
 
+<div class="absolute right-10% max-w-40% text-sm bottom-10% opacity-70%">
+
+a,b, Experimental (a) and C.Origami-predicted (b) Hi-C matrices from IMR-90 (left) and GM12878 (middle), and their differences (right). Arrowheads highlight differential chromatin interactions between the two cell types. c, CTCF-binding and ATAC–seq profiles. d, Insulation scores calculated from experimental Hi-C matrices (solid line) and C.Origami-predicted Hi-C matrices (dotted line).
+
+</div>
+
 ---
 
 ```yaml
 layout: image-right
 transition: slide-up
 image: /figures/figure3-e-h.webp
-backgroundSize: auto 95%
 ```
 
 ## Correlation to Experimental Data
@@ -225,6 +251,12 @@ backgroundSize: auto 95%
 - Matrix correlation is considerably lower
 - Matrix correlation falls as distance increases
 - Performs better than sequence-only models in all cases
+
+<div class="absolute left-5% max-w-40% text-sm bottom-0% opacity-70%">
+
+e, Pearson correlation between insulation scores calculated from predicted and experimental Hi-C matrices across cell types. f–h, Genome-wide evaluation of sequence-based models and C.Origami using de novo prediction results from GM12878 cells. Presented metrics include insulation score correlation (f), observed versus expected matrix correlation (g) and distance-stratified correlation (h). Error bars in violin plots of f and g indicate minimum, mean and maximum values within each group. Corr, correlation; obs/exp, observed/expected.
+
+</div>
 
 ---
 
@@ -241,7 +273,6 @@ hideInToc: true
 transition: slide-up
 layout: image
 image: /figures/figure4.webp
-backgroundSize: auto 95%
 ```
 
 ---
@@ -258,6 +289,10 @@ routeAlias: figure4-a-b
 
 - Opportunity to test in silico modifications
 - Hi-C is performed on the CUTLL1 Cells (which have a real translocation)
+
+::caption::
+
+**a,** Chromosomal translocation t(7;9) in CUTLL1 cells. **b**, Experimental Hi-C data mapped to a custom reference chromosome with t(7;9) translocation
 
 <!--
 Note the TAD difference from non-translocated cells indicated by the arrows

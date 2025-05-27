@@ -1,9 +1,17 @@
 ---
-layout: section
+layout: intro
 hideInToc: true
 ---
 
-# Figure 6
+# Supplemental Figures
+
+---
+
+```yaml
+layout: section
+```
+
+## Figure 6
 
 ---
 

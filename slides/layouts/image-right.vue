@@ -23,9 +23,9 @@ const style = computed(() => handleBackground(props.image, false, props.backgrou
     <div class="slidev-layout default" :class="props.class">
       <slot />
     </div>
-    <div class="w-full h-full flex flex-col items-center justify-center">
-	 <img :src="props.image" class="p-5 max-w-full max-h-80%  -z-10" />
- 	 <div class="p-2 text-sm text-center opacity-70">
+    <div class="p-3 w-full h-full flex flex-col items-center justify-center">
+	 <img :src="props.image" class=" min-h-0 max-w-full max-h-full  -z-10" />
+ 	 <div class=" text-sm text-left opacity-70">
               <slot name="caption" />
       	 </div>
     </div>
