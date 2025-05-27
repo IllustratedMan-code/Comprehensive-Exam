@@ -1,7 +1,7 @@
 ---
 layout: section
 title: Supplement
-hideInToc: true
+hideInToc: false
 ---
 
 # Supplement
@@ -119,6 +119,7 @@ chromatin within a TAD may interact with itself, but not with chromatin in other
 
 ```yaml
 routeAlias: CUTLL1
+hideInToc: true
 ```
 
 # CUTLL1 Cells
@@ -138,3 +139,13 @@ routeAlias: GM12878
 Epstein-Barr transfected lymphoblastoid human cell line.
 
 <goBack from=figure3-a-d />
+
+---
+
+## GRAM score
+
+```yaml
+routeAlias: GRAM
+```
+
+---

@@ -10,13 +10,13 @@ mdc: true
 
 <div class="absolute top-30">
 
-<h1> Qualifying Exam </h1>
+<h1 style="font-size: 3rem;"> Qualifying Exam </h1>
 
 David Lewis
 
 </div>
 
-<img class="absolute right-10 bottom-30" src=/paper-title.png  width=60% />
+<img class="absolute right-10 bottom-30" src=/paper-title.png  width=70% />
 
 ---
 
@@ -37,6 +37,12 @@ routeAlias: vocab
 layout: two-cols
 ```
 
+<h1 class="absolute top-10" > Key Terms </h1>
+
+<br>
+<br>
+<br>
+
 ### Bioinformatics
 
 - <Link title="Transcription Factor" to=TF />
@@ -46,6 +52,10 @@ layout: two-cols
 - <Link title="Topologically Associated Domains (TADs)" to=TAD />
 
 ::right::
+
+<br>
+<br>
+<br>
 
 ### Machine Learning
 
@@ -62,7 +72,7 @@ A Choose Your Own Adventure style of introduction. If everyone knows the topics 
 layout: center
 ```
 
-# Purpose?
+# Purpose
 
 <div v-click v-motion :initial="{ y: -50 }" :enter="{ y: 0 }">
 
@@ -81,9 +91,10 @@ Everything in the paper boils down to predicting 3D chromatin conformation from 
 # Rationale
 
 <v-clicks>
+
 - Hi-C is expensive when compared to CTCF ChIP + ATAC-seq
 - In silico experiments
-- No other multi-modal models
+- No other multi-modal models at time of writing
 
 </v-clicks>
 
@@ -92,6 +103,10 @@ In silico experiments manipulate the presence of cis-regulatory elements (DNA)
 -->
 
 ---
+
+```yaml
+hideInToc: true
+```
 
 # Why CTCF?
 
@@ -147,7 +162,7 @@ layout: intro
 
 ---
 
-## Agree or Disagree?
+## Overall Consensus
 
 <v-clicks>
 

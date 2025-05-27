@@ -78,8 +78,6 @@ image: /figures/figure2-a.webp
 backgroundSize: 90% 90%
 ```
 
-## Cropped Image Wrong
-
 ## Input Data Types Matter
 
 - C. Origami (DNA + CTCF + ATAC) performs the best
@@ -349,19 +347,5 @@ backgroundSize: 95% auto
 ---
 
 ```yaml
-layout: section
-hideInToc: true
+src: /pages/supplemental-figures.md
 ```
-
-# Figure 6
-
----
-
-```yaml
-layout: image
-image: /figures/figure6.webp
-backgroundSize: auto 95%
-```
-
----
-
