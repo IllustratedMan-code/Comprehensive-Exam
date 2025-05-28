@@ -42,15 +42,25 @@ backgroundSize: 95% auto
 - Used to determine 3D chromatin relationships
 - Can identify <Link title="TADs" to=TAD />
 
+::caption::
+Prakrutiuday, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
 <goBack />
 
 ---
 
 ```yaml
 routeAlias: ATAC-seq
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tn5_Transposase_in_ATAC-seq.webp/1024px-Tn5_Transposase_in_ATAC-seq.webp.png
+layout: image-right
 ```
 
 ## ATAC-seq
+
+An assay for measuring accessible chromatin, in other words, chromatin that allows normal transcription factors to bind.
+
+::caption::
+By Sun, Y., Miao, N. & Sun, T. - Sun, Y., Miao, N. & Sun, T. Detect accessible chromatin using ATAC-sequencing, from principle to applications. Hereditas 156, 29 (2019). https://doi.org/10.1186/s41065-019-0105-9, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=163464776
 
 <goBack />
 
@@ -104,6 +114,8 @@ backgroundSize: 95% auto
 
 ## Transformer Encoder
 
+Takes input vectors as input and "transforms" it into an embedding space where each vector represents a point in a high dimensional space. These points can then be compared to see relationships.
+
 <goBack />
 
 ---
@@ -148,10 +160,25 @@ Epstein-Barr transfected lymphoblastoid human cell line.
 
 ---
 
-## GRAM score
-
 ```yaml
 routeAlias: GRAM
 ```
+
+## GRAM score
+
+$$
+\text{GRAM}_m (r) = \sum_k \text{ReLU} (\alpha^r_k) \cdot \text{ReLU} (A^m_k)
+$$
+
+$$
+a^r_k = \frac{1}{Z} \sum_i \sum_j \frac{ \partial r}{\partial A^m_{k_{i, j}}}
+$$
+
+- Z is the number of pixels or activations in a layer
+- m is activation layer ID
+- k is channel
+- r is the full output space
+- Operates on convolutional 2D layers
+- Does not appear to be implemented in the source code
 
 ---
