@@ -1,0 +1,9 @@
+
+* TODO Paraphrase Legends
+
+Need to shorten legends
+
+
+* TODO Learn more about conv1d architecture
+
+* 

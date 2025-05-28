@@ -149,7 +149,6 @@ layout: intro
 
 <v-clicks>
 
-- CTCF only performs this function in mammals
 - Insulation is not a perfect metric
 - Does not capture distant interactions well
 - No "meta methods" about ML model architecture
