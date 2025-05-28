@@ -88,10 +88,6 @@ image: /figures/figure2-a.webp
 - C. Origami (DNA + CTCF + ATAC) performs the best
 - Lower validation loss = better performance on the validation chromosome
 
-::caption::
-
-Validation loss of models trained from different combinations of input features. Lower validation loss indicates better model performance.
-
 ---
 
 ```yaml
@@ -195,9 +191,6 @@ image: /figures/figure2-f-h.webp
 - C. Origami has higher correlation than competing (sequence only) models
 - Direct (non-insulation) correlation decreases as distance increases
 
-::caption::
-f, Insulation score correlation between predicted and experimental Hi-C matrices across all windows in both validation and test chromosomes with Pearson ($r$) and Spearman ($\rho$) correlation coefficients. g, Chromosome-wide distance-stratified interaction correlation (Pearson) between prediction and experimental data. h, Comparison of model performance across Akita, DeepC, Orca and C.Origami using genome-wide insulation score correlation between prediction and experimental data from IMR-90 cells. Error bars in the violin plots indicate minimum, mean and maximum values. μ, average insulation correlation.
-
 ---
 
 ```yaml
@@ -230,12 +223,7 @@ routeAlias: figure3-a-d
 
 - Correctly identifies looping differences in the GM12878 cell line
 - Insulation scores are highly correlated
-
-<div class="absolute right-10% max-w-40% text-sm bottom-10% opacity-70%">
-
-a,b, Experimental (a) and C.Origami-predicted (b) Hi-C matrices from IMR-90 (left) and GM12878 (middle), and their differences (right). Arrowheads highlight differential chromatin interactions between the two cell types. c, CTCF-binding and ATAC–seq profiles. d, Insulation scores calculated from experimental Hi-C matrices (solid line) and C.Origami-predicted Hi-C matrices (dotted line).
-
-</div>
+- Arrows show cell-type-specific differences
 
 ---
 
@@ -251,12 +239,6 @@ image: /figures/figure3-e-h.webp
 - Matrix correlation is considerably lower
 - Matrix correlation falls as distance increases
 - Performs better than sequence-only models in all cases
-
-<div class="absolute left-5% max-w-40% text-sm bottom-0% opacity-70%">
-
-e, Pearson correlation between insulation scores calculated from predicted and experimental Hi-C matrices across cell types. f–h, Genome-wide evaluation of sequence-based models and C.Origami using de novo prediction results from GM12878 cells. Presented metrics include insulation score correlation (f), observed versus expected matrix correlation (g) and distance-stratified correlation (h). Error bars in violin plots of f and g indicate minimum, mean and maximum values within each group. Corr, correlation; obs/exp, observed/expected.
-
-</div>
 
 ---
 
@@ -366,7 +348,7 @@ image: /figures/figure5-c.webp
 backgroundSize: auto 95%
 ```
 
-## All Scores are Correlated with ATAC and CTCF signal
+<h2 class="absolute bottom-50% max-w-40%"> All Scores are Correlated with ATAC and CTCF signal </h2>
 
 ---
 
@@ -380,6 +362,3 @@ backgroundSize: 95% auto
 
 - Groups are clustered by presence and absence of ATAC and CTCF signal
 - Each row of **e** represents a 5Kb region centered by an "important" 1Kb region
-
-::caption::
-Legend goes here
