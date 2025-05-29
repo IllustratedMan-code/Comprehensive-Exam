@@ -6,6 +6,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+title: Comprehensive Exam
 ---
 
 <div class="absolute top-30">
