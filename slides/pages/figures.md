@@ -363,3 +363,4 @@ backgroundSize: 95% auto
 - Groups are clustered by presence and absence of ATAC and CTCF signal
 - Each row of **e** represents a 5Kb region centered by an "important" 1Kb region
 - RAD21 and SMC3 are cohesin subunits
+- MAZ has been shown to colocalize with CTCF
