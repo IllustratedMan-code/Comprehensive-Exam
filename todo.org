@@ -1,9 +1,11 @@
 
-* TODO Paraphrase Legends
+* DONE Paraphrase Legends
+CLOSED: [2025-05-29 Thu 14:22]
 
 Need to shorten legends
 
 
-* TODO Learn more about conv1d architecture
+* DONE Learn more about conv1d architecture
+CLOSED: [2025-05-29 Thu 14:22]
 
 * 
