@@ -37,7 +37,7 @@ image: /figures/mouse.png
 backgroundSize: auto 95%
 ```
 
-# Comparison With Mouse Cell Line
+## Comparison With Mouse Cell Line
 
 - Correlation is lower in mouse cells
 - limited inter-species inference
