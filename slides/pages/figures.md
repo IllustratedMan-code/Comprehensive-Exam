@@ -163,18 +163,6 @@ transition: slide-up
 - Insulation scores are highly similar
 - Insulation is inversly correlated with CTCF and ATAC-seq signal (mostly)
 
-<div class="absolute left-10% max-w-40% text-sm bottom-10% opacity-70%">
-
-**b**,**c**, Experimental (**b**) and C.Origami-predicted (**c**) Hi-C
-matrices of IMR-90 on training (chr2), validation (chr10) and test
-(chr15) chromosomes. **d**, Input CTCF-binding and chromatin
-accessibility profiles. **e**, Insulation scores calculated from
-experimental (solid line) and C.Origami-predicted (dotted line) Hi-C
-matrices. Pearson correlation coefficients between prediction and
-target insulation scores are presented.
-
-</div>
-
 ---
 
 ```yaml

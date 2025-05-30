@@ -146,7 +146,7 @@ layout: intro
 
 ---
 
-## Critiques
+## Critiques/Limitations
 
 <v-clicks>
 
